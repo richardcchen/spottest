@@ -1,3 +1,8 @@
+<%= meta_tag :'og:title', @post.title %>
+<%= meta_tag :'og:description', @post.content %>
+<%= meta_tag :'og:url', "https://spottesting.herokuapp.com/posts/#{@post.id}" %>
+<%= meta_tag :'og:image', Faker::Company.logo %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
