@@ -4,10 +4,7 @@
     <title>Spottest</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <title>
-      <%= if content_for?(:title) then yield(:title) + ' | ' end%>
-      My Awesome Site
-    </title>
+
     <meta property='og:title'
       content='<%= yield_meta_tag(:'og:title', "Default title") %>' />
     <meta property='og:description'
@@ -16,10 +13,7 @@
       content='<%= yield_meta_tag(:'og:url', "Default Url") %>' />
     <meta property='og:image'
       content='<%= yield_meta_tag(:'og:image', "Default image") %>' />
-    <!-- <meta property="og:title" content="SPOT" />
-    <meta property="og:description" content="Richard's test page" />
-    <meta property="og:url" content="htts://www.spot.im" />
-    <meta property="og:image" content="http://en.bcdn.biz/Images/2018/6/12/49c138bc-9393-4dfe-919e-beeb1aaa01ae.jpg" /> -->
+
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
