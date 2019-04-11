@@ -1,3 +1,11 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+[data-spot-im-class="header-text"]:after {
+    content: 'Sign-up for an account today to save your comment history & receive up votes!';
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
