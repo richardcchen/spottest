@@ -9,7 +9,9 @@
 
 
 <p id="notice"><%= notice %></p>
-
+<div> Total Comments:
+  <span class="spot-im-replies-count" data-post-id="<%= @post.id %>"></span>
+</div>
 <p>
   <strong>Name:</strong>
   <%= @post.name %>
@@ -51,6 +53,8 @@
   data-post-url = "https://spottesting.herokuapp.com/posts/<%=@post.id%>"
   data-post-id="<%="#{@post.id}review"%>" >
 </script>
+
+
 
 <!-- <div style="color:#7B7F83;margin:15px;font-size:13px;text-transform:uppercase;">Side Rail Test</div>
 <div data-spotim-module="recirculation" data-spot-id="sp_LBaUdxe3"></div>
